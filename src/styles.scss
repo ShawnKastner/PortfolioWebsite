@@ -1,1 +1,53 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'Poppins', sans-serif;
+    src: url('assets/font/Poppins-BlackItalic.ttf');
+    src: url('assets/font/Poppins-BlackItalic.ttf');
+    src: url('assets/font/Poppins-Bold.ttf');
+    src: url('assets/font/Poppins-BoldItalic.ttf');
+    src: url('assets/font/Poppins-ExtraBold.ttf');
+    src: url('assets/font/Poppins-ExtraLight.ttf');
+    src: url('assets/font/Poppins-ExtraLightItalic.ttf');
+    src: url('assets/font/Poppins-Italic.ttf');
+    src: url('assets/font/Poppins-Light.ttf');
+    src: url('assets/font/Poppins-LightItalic.ttf');
+    src: url('assets/font/Poppins-Medium.ttf');
+    src: url('assets/font/Poppins-Black.ttf');
+    src: url('assets/font/Poppins-MediumItalic.ttf');
+    src: url('assets/font/Poppins-Regular.ttf');
+    src: url('assets/font/Poppins-SemiBold.ttf');
+    src: url('assets/font/Poppins-SemiBoldItalic.ttf');
+    src: url('assets/font/Poppins-Thin.ttf');
+    src: url('assets/font/Poppins-ThinItalic.ttf');
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #141D2F;
+    overflow-x: hidden;
+}
+
+.mainButton {
+    margin-top: 45px;
+    border: unset;
+    background-color: #70E61C;
+    transition: ease-in-out 125ms;
+    border-radius: 10px;
+    padding: 15px 30px 15px 30px;
+    color: #ffff;
+    font-size: 23px;
+    z-index: 100;
+    transition: ease-in-out 125ms;
+
+    &:hover {
+        cursor: pointer;
+        transition: ease-in-out 125ms;
+        transform: scale(1.15);
+        background-color: #9747FF;
+    }
+
+}
