@@ -1,1 +1,20 @@
-<p>skills works!</p>
+<div id="skills" class="skillsContainer">
+    <div class="skillImagesContainer">
+        <div class="imagesWithDescription" *ngFor="let images of skillImages">
+            <img src="assets/img/icons/{{ images }}.png">
+            <span>{{ images }}</span>
+        </div>
+    </div>
+
+    <div class="skillsHeadlineContainer">
+        <div class="headLineWithLine">
+            <h1>My skills</h1>
+            <div class="purpleLine"></div>
+        </div>
+        <div class="skillsExperienceText">
+            <span>I have gained experience in building projects with various<br>
+                front end technologies and concepts</span>
+            <button class="mainButton">Get in touch</button>
+        </div>
+    </div>
+</div>

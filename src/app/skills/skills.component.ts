@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class SkillsComponent {
 
+  skillImages = ['Angular', 'TypeScript', 'JavaScript', 'HTML','Firebase','GIT','CSS','Rest-Api','Scrum','Material Design'];
+
 }
