@@ -1,0 +1,29 @@
+.headerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #141D2F;
+    padding: 35px 120px 35px 120px;
+
+    .headerLinks {
+        display: flex;
+        gap: 30px;
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 23px;
+            transition: ease-in-out 125ms;
+
+            &:hover {
+                transition: ease-in-out 125ms;
+                color: #70E61C;
+            }
+        }
+    }
+}
