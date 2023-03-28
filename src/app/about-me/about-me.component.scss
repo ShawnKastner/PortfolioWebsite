@@ -1,0 +1,68 @@
+.aboutMeContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffff;
+    padding: 100px;
+
+    .zIndex-1 {
+        z-index: 1;
+    }
+
+    h1 {
+        font-size: 90px;
+    }
+
+    .aboutMeDescription {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        justify-content: center;
+        gap: 35px;
+        width: 471px;
+    }
+
+    .displayFlex {
+        display: flex;
+    }
+
+    .gap-42 {
+        gap: 42px;
+    }
+
+    .gap-35 {
+        gap: 35px;
+    }
+
+    .scaleImg {
+        transition: ease-in-out 125ms;
+
+        &:hover {
+            transition: ease-in-out 125ms;
+            transform: scale(1.2);
+        }
+    }
+
+    .profileImageContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 453px;
+        height: 453px;
+        border: 4px solid #70E61C;
+        border-radius: 50%;
+    }
+
+    .greenLine {
+        width: 40%;
+        border: 4px solid #70E61C;
+        position: relative;
+        left: 325px;
+    }
+
+    .purpleShadow {
+        position: absolute;
+        right: -380px;
+        top: 800px;
+    }
+}
