@@ -1,0 +1,56 @@
+.contactSection {
+    margin-top: 260px;
+    padding: 100px;
+
+    .purpleLine {
+        width: 50px;
+        border: 4px solid #9747FF;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+        position: absolute;
+        left: 0;
+    }
+
+    .headlineContainer {
+        display: flex;
+        align-items: center;
+    }
+
+    .contactMeSection {
+        .fontSize-32 {
+            font-size: 32px;
+            font-weight: 700;
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 35px;
+
+        .input-style {
+            color: #ffff;
+            padding: 15px 25px;
+            background-color: #141D2F;
+            border: 1px solid #9747FF;
+            border-radius: 10px;
+            font-size: 16px;
+            width: 617px;
+
+            &::placeholder {
+                color: #ffff;
+            }
+        }
+
+        textarea {
+            height: 202px;
+        }
+    }
+
+    .spaceBetween {
+        display: flex;
+        justify-content: space-between;
+    }
+}
