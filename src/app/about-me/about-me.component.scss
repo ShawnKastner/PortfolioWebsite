@@ -10,7 +10,7 @@
 
     .aboutMeDescription {
         display: flex;
-        align-items: flex-end;
+        align-items: flex-start;
         flex-direction: column;
         justify-content: center;
         gap: 35px;
@@ -42,6 +42,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        position: absolute;
+        right: 260px;
         width: 453px;
         height: 453px;
         border: 4px solid #70E61C;
@@ -49,15 +51,16 @@
     }
 
     .greenLine {
-        width: 40%;
+        width: 260px;
         border: 4px solid #70E61C;
         position: relative;
-        left: 325px;
+        left: 360px;
     }
 
     .purpleShadow {
         position: absolute;
-        right: -380px;
-        top: 800px;
+        right: -500px;
+        top: 780px;
+        height: 900px;
     }
 }
