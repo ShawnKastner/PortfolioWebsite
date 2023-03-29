@@ -68,3 +68,9 @@ body {
         }
     }
 }
+
+@media (max-width: 1000px) {
+    .hideMobile {
+        display: none !important;
+    }
+}
