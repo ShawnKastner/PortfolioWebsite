@@ -12,11 +12,12 @@
                 Need a Frontend developer? <b>Contact me!</b></span>
         </div>
 
-        <form>
-            <input class="input-style" placeholder="Your name">
-            <input class="input-style" placeholder="Your email">
-            <textarea class="input-style" placeholder="Your message"></textarea>
-            <button class="mainButton">Send message :)</button>
+        <form (submit)="sendMail()" ngNativeValidate #myForm>
+            <input required  type="text" class="input-style" name="name" #nameField placeholder="Your name">
+            <input required type="email" class="input-style" name="email" #emailField placeholder="Your email">
+            <textarea required type="text" class="input-style" name="message" #messageField placeholder="Your message"></textarea>
+            <span [innerHTML]="successfullSend"></span>
+            <button class="mainButton" #sendButton>Send message :)</button>
         </form>
     </div>
 </div>
