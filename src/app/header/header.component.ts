@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+  dNone = true;
+  headerLinks = false;
+
+  openMobileMenu() {
+    this.dNone = false;
+    this.headerLinks = true;
+  }
+
+  closeMobileMenu() {
+    this.dNone = true;
+    this.headerLinks = false;
+  }
 
 }

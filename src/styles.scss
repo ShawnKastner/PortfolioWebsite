@@ -74,3 +74,8 @@ body {
         display: none !important;
     }
 }
+@media (min-width: 1000px) {
+    .hideDesktop {
+        display: none !important;
+    }
+}

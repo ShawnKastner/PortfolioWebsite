@@ -42,6 +42,10 @@
             &::placeholder {
                 color: #ffff;
             }
+
+            &:hover {
+                border: 1px solid #70E61C;
+            }
         }
 
         textarea {
