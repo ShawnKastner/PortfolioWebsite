@@ -3,6 +3,7 @@
     margin-top: 60px;
     display: flex;
     justify-content: space-between;
+    position: relative;
 
 
     .skillImagesContainer {
@@ -20,6 +21,13 @@
                 animation: imagesJump ease-in-out 0.25s;
             }
         }
+    }
+
+    .greenShadow {
+        position: absolute;
+        left: -340px;
+        transform: rotate(45deg);
+        top: 340px;
     }
 
     @keyframes imagesJump {
