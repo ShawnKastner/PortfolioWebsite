@@ -1,0 +1,29 @@
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 290px;
+    border-top: 4px solid #70E61C;
+
+    .impressumContainer {
+        display: flex;
+        flex-direction: column;
+
+        a {
+            padding: 8px;
+        }
+    }
+
+    .socialMediaIcons {
+        display: flex;
+        gap: 42px;
+        transition: ease-in-out 125ms;
+
+        img {
+            &:hover {
+                transition: ease-in-out 125ms;
+                transform: scale(1.3);
+            }
+        }
+    }
+}
