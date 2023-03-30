@@ -107,3 +107,58 @@
 .textEnd {
     text-align: end;
 }
+
+@media (max-width: 900px) {
+    .portfolioContainer {
+        .portfolioDescription {
+            text-align: center;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+
+        .headlineContainer {
+            gap: 9px;
+
+            h1 {
+                font-size: 45px;
+            }
+
+            .shortPurpleLine {
+                width: 20px;
+            }
+
+            .longPurpleLine {
+                width: 75px;
+            }
+        }
+
+        .positionProjects {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .descriptionProjects {
+            align-items: center;
+            text-align: center;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+
+        .btnContainer {
+            gap: 50px;
+        }
+
+        .positionProjects {
+            margin-top: 100px;
+            gap: 15px;
+        }
+    }
+
+    .columnReverse {
+        flex-direction: column-reverse !important;
+    }
+
+    .textEnd {
+        text-align: center;
+    }
+}

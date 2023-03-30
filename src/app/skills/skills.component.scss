@@ -111,6 +111,13 @@
             margin-right: 26px;
             width: 290px;
             padding-right: unset;
+
+            a {
+                position: relative;
+                top: 740px;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
         }
 
         .headLineWithLine {
