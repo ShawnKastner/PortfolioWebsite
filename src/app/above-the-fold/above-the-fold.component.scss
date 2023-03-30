@@ -125,7 +125,8 @@
             right: unset;
             height: unset;
             top: unset;
-            bottom: 100px;        
+            align-items: center;
+            bottom: 100px;
         }
 
         .bowImg {
@@ -159,5 +160,22 @@
         }
     }
 
+    @media(max-width: 400px) {
+        .aboveTheFoldSection {
+
+
+            .headlineContainer {
+                bottom: 60px;
+
+                .headlineName {
+                    font-size: 40px;
+                }
+
+                span {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
 
 }
