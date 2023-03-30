@@ -58,3 +58,47 @@
         justify-content: space-between;
     }
 }
+
+@media (max-width: 1000px) {
+    .contactSection {
+        padding: unset;
+
+        .headlineContainer {
+            gap: 5px;
+            .purpleLine {
+                position: unset;
+                width: 20px;
+            }
+        }
+
+        .fontSize-90 {
+            font-size: 45px;
+        }
+
+        .contactMeSection {
+            margin-bottom: 28px; 
+        }
+
+        .spaceBetween {
+            padding-left: 25px;
+            padding-right: 25px;
+            flex-direction: column;
+        }
+
+        form {
+            padding-left: 25px;
+            padding-right: 25px;
+
+            .input-style {
+                width: 100%;
+            }
+        }
+
+        .mainButton {
+            margin-top: unset;
+            position: relative;
+            bottom: 38px;
+        }
+
+    }
+}
