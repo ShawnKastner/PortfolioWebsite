@@ -7,16 +7,24 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
   dNone = true;
-  headerLinks = false;
+  headerLinks = true;
+  slideIn = false;
+  slideOut = false;
 
   openMobileMenu() {
     this.dNone = false;
-    this.headerLinks = true;
+    this.slideIn = true;
+    setTimeout(() => this.slideIn = false, 500);
   }
 
   closeMobileMenu() {
-    this.dNone = true;
-    this.headerLinks = false;
+    this.slideOut = true;
+
+    setTimeout(() => {
+      this.slideOut = false;
+      this.dNone = true;
+    }, 200);
+
   }
 
 }

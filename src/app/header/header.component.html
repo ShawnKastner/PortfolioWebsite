@@ -8,7 +8,7 @@
 
     <div class="hideDesktop">
         <img (click)="openMobileMenu()" class="burgerMenu" src="assets/img/icons/burgerMenu.png">
-        <div [ngClass]="{'dNone': dNone, 'headerLinks': headerLinks}" id="mobileMenu">
+        <div [ngClass]="{'dNone': dNone, 'headerLinks': headerLinks, 'slideIn': slideIn, 'slideOut': slideOut}">
             <img (click)="closeMobileMenu()" class="closeBtn" src="assets/img/icons/close.png">
             <a href="#aboutMe">About me</a>
             <a href="#skills">Skills</a>

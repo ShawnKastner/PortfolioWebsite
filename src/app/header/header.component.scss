@@ -44,16 +44,30 @@
 }
 
 .slideIn {
-    animation: slideIn ease-in 5s;
+    animation: slideIn ease-in 0.25s;
 }
 
-@keyframes slidein {
+.slideOut {
+    animation: slideOut ease-out 0.25s;
+}
+
+@keyframes slideIn {
     from {
         margin-left: 100%;
     }
 
     to {
         margin-left: 0%;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        margin-left: 0%;
+    }
+
+    to {
+        margin-left: 100%;
     }
 }
 
