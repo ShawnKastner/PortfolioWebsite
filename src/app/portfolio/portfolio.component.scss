@@ -114,6 +114,10 @@
     .portfolioContainer {
         margin-top: 330px;
 
+        .imagesPortfolio {
+            width: 390px;
+        }
+
         .portfolioDescription {
             text-align: center;
             padding-left: 25px;
@@ -149,7 +153,7 @@
         }
 
         .btnContainer {
-            gap: 50px;
+            gap: 45px;
         }
     }
 
