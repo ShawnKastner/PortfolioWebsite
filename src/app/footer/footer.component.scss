@@ -6,19 +6,30 @@ footer {
     border-top: 4px solid #70E61C;
     background-color: #141D2F;
 
+    .spaceAround {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .flexCenter {
+        display: flex;
+        align-items: center;
+    }
+
+    a {
+        padding: 8px;
+        text-decoration: none;
+        color: #FFFF;
+    }
+
     .impressumContainer {
         display: flex;
         flex-direction: column;
-
-        a {
-            padding: 8px;
-            text-decoration: none;
-            color: #FFFF;
-        }
     }
 
     .socialMediaIcons {
         display: flex;
+        align-items: center;
         gap: 42px;
         transition: ease-in-out 125ms;
 
@@ -28,5 +39,37 @@ footer {
                 transform: scale(1.3);
             }
         }
+    }
+}
+
+@media (min-width: 800px) {
+    .hideDesktop {
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    .columnReverse {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .gap-24 {
+        gap: 24px;
+    }
+
+    .flexColumn {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hideMobile {
+        display: none;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+
     }
 }

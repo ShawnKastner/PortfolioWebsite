@@ -61,13 +61,14 @@
 }
 
 .shadowFooter {
+    width: 747.47px;
+    height: 902.79px;
     position: absolute;
     bottom: -300px;
+    left: -321px;
     z-index: -1;
-    filter: blur(46.5px);
-    left: -380px;
     transform: rotate(-89.02deg);
-    height: 900px;
+    filter: blur(46.5px);
 }
 
 @media (max-width: 1000px) {
