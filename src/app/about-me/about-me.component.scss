@@ -62,6 +62,8 @@
         right: -500px;
         top: 780px;
         height: 900px;
+        filter: blur(46.5px);
+        transform: rotate(46.66deg);
     }
 }
 
@@ -83,12 +85,19 @@
 
 @media(max-width: 635px) {
     .aboutMeContainer {
+        position: relative;
+        margin-top: 260px;
+
         h1 {
             font-size: 45px;
         }
 
         .purpleShadow {
-            height: unset;
+            width: 130px;
+            height: 500px;
+            right: 0;
+            top: 0;
+            transform: unset;
         }
     }
 }

@@ -41,7 +41,7 @@
 
     .shadowImg {
         width: 650px;
-
+        filter: blur(46.5px);
     }
 
     .bowImg {
@@ -140,8 +140,9 @@
 
         .shadowImg {
             position: absolute;
-            top: 60px;
-            width: 615px;
+            width: 450px;
+            right: 0;
+            top: 120px;
         }
 
         .socialMediaContainer {
@@ -162,10 +163,12 @@
 
     @media(max-width: 400px) {
         .aboveTheFoldSection {
-
+            .socialMediaContainer {
+                bottom: -220px;
+            }
 
             .headlineContainer {
-                bottom: 60px;
+                bottom: -115px;
 
                 .headlineName {
                     font-size: 40px;

@@ -1,5 +1,7 @@
 .portfolioContainer {
     margin-top: 260px;
+    position: relative;
+    top: 200px;
 
     h1 {
         font-size: 90px;
@@ -63,7 +65,7 @@
         display: flex;
         justify-content: center;
         gap: 35px;
-        margin-top: 160px;
+        margin-top: 120px;
     }
 
     .btnContainer {
@@ -110,6 +112,8 @@
 
 @media (max-width: 900px) {
     .portfolioContainer {
+        margin-top: 330px;
+
         .portfolioDescription {
             text-align: center;
             padding-left: 25px;

@@ -75,6 +75,10 @@
     .headerContainer {
         padding: 37px 25px;
 
+        img {
+            height: 35px;
+        }
+
         .headerLinks {
             flex-direction: column;
             align-items: center;
