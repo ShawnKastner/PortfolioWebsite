@@ -5,18 +5,18 @@
     justify-content: space-between;
     position: relative;
 
+    .displayCenter {
+        display: flex;
+        justify-content: center;
+    }
 
     .skillImagesContainer {
         width: 740px;
-        height: 414px;
         display: flex;
-        gap: 150px;
+        gap: 90px;
         flex-wrap: wrap;
 
         img {
-            width: 60px;
-            height: 60px;
-
             &:hover {
                 animation: imagesJump ease-in-out 0.25s;
             }
@@ -78,21 +78,32 @@
     }
 }
 
-@media (max-width: 1280px) {
+@media(min-width: 1235px) {
+    .hideGetTouchDesk {
+        display: none !important;
+    }
+}
+
+
+@media (max-width: 1360px) {
     .fontSize-90 {
         font-size: 70px;
     }
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1280px) {
     .fontSize-90 {
         font-size: 60px;
     }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1235px) {
     .fontSize-90 {
         font-size: 45px;
+    }
+
+    .hideGetTouchMobile {
+        display: none;
     }
 
     .skillsContainer {
@@ -105,6 +116,7 @@
             display: flex;
             flex-direction: column;
             align-items: flex-end;
+            margin-bottom: 60px;
         }
 
         .skillsExperienceText {
@@ -113,8 +125,11 @@
             padding-right: unset;
 
             a {
-                position: relative;
-                top: 740px;
+                position: absolute;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                bottom: 0;
+
             }
         }
 
@@ -133,7 +148,6 @@
         .skillImagesContainer {
             width: unset !important;
             gap: 100px;
-            margin-bottom: 300px;
         }
     }
 

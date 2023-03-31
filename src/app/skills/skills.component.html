@@ -1,11 +1,18 @@
 <div id="skills" class="skillsContainer">
     <img class="greenShadow" src="assets/img/shadow/greenShadow.png">
-    <div class="skillImagesContainer">
-        <div class="imagesWithDescription" *ngFor="let images of skillImages">
-            <img src="assets/img/icons/{{ images }}.png">
-            <span>{{ images }}</span>
+    <div>
+        <div class="skillImagesContainer">
+            <div class="imagesWithDescription" *ngFor="let images of skillImages">
+                <img src="assets/img/icons/{{ images }}.png">
+            </div>
+
+        </div>
+        <div class="displayCenter hideGetTouchDesk">
+            <a href="#contact"><button class="mainButton">Get in touch</button></a>
         </div>
     </div>
+
+
     <div class="skillsHeadlineContainer">
         <div class="headLineWithLine">
             <h1 class="fontSize-90">My skills</h1>
@@ -14,7 +21,8 @@
         <div class="skillsExperienceText">
             <span>I have gained experience in building projects with various<br>
                 front end technologies and concepts</span>
-            <a href="#contact"><button class="mainButton">Get in touch</button></a>
+            <a href="#contact"><button class="mainButton hideGetTouchMobile">Get in touch</button></a>
         </div>
     </div>
+
 </div>
