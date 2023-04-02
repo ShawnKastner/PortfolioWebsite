@@ -27,7 +27,7 @@ export class ContactComponent {
     fd.append('email', emailField.value);
     fd.append('message', messageField.value);
 
-    await fetch('https://shawn-kastner.developerakademie.net/send_mail/send_mail.php',
+    await fetch('https://shawn-kastner.de/send_mail/send_mail.php',
       {
         method: 'POST',
         body: fd
