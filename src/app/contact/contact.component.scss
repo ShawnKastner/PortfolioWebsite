@@ -29,9 +29,10 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        text-align: center;
         gap: 35px;
 
-        .input-style {
+        .inputStyle {
             color: #ffff;
             padding: 15px 25px;
             background-color: #141D2F;
@@ -71,12 +72,32 @@
     filter: blur(46.5px);
 }
 
+.redBorder {
+    border-color: red !important;
+}
+
+.greenBorder {
+    border-color: #70E61C !important;
+}
+
+.imagePosition {
+    position: absolute;
+    top: 11px;
+    right: 11px;
+}
+
+.disabled-btn {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
 @media (max-width: 1000px) {
     .contactSection {
         padding: unset;
 
         .headlineContainer {
             gap: 5px;
+
             .purpleLine {
                 position: unset;
                 width: 20px;
@@ -88,7 +109,7 @@
         }
 
         .contactMeSection {
-            margin-bottom: 28px; 
+            margin-bottom: 28px;
         }
 
         .spaceBetween {
@@ -101,7 +122,7 @@
             padding-left: 25px;
             padding-right: 25px;
 
-            .input-style {
+            .inputStyle {
                 width: 100%;
             }
         }

@@ -12,12 +12,72 @@
             <span>Need a Frontend developer? <b>Contact me!</b></span>
         </div>
 
-        <form (submit)="sendMail()" ngNativeValidate #myForm>
-            <input required  type="text" class="input-style" name="name" #nameField placeholder="Your name">
-            <input required type="email" class="input-style" name="email" #emailField placeholder="Your email">
-            <textarea required type="text" class="input-style" name="message" #messageField placeholder="Your message"></textarea>
+        <form [formGroup]="contactForm" (ngSubmit)="sendMail()" novalidate #myForm>
+            <!-- Input for full name -->
+            <div [ngStyle]="{'position': 'relative'}">
+                <input class="inputStyle" id="name"
+                    [ngClass]="{'redBorder' : !name?.valid && name?.touched, 'greenBorder': name?.valid}" type="text"
+                    id="name" name="name" formControlName="name" placeholder="Your name" #nameField>
+                <div *ngIf="!name?.valid && name?.touched">
+                    <img class="imagePosition" src="assets/img/icons/formError.png"
+                        [hidden]="!name?.errors?.['valid'] && name?.errors?.['touched']">
+                </div>
+                <div *ngIf="name?.valid && name?.touched">
+                    <img class="imagePosition" src="assets/img/icons/formSuccess.png"
+                        [hidden]="name?.errors?.['valid'] && name?.errors?.['touched']">
+                </div>
+                <div *ngIf="!name?.valid && name?.touched">
+                    <div [ngStyle]="{'color': 'red'}" [hidden]="!name?.errors?.['required']">
+                        Your name is required
+                    </div>
+                </div>
+            </div>
+
+            <!-- Input for email -->
+            <div [ngStyle]="{'position': 'relative'}">
+                <input [ngClass]="{'redBorder' : !email?.valid && email?.touched, 'greenBorder': email?.valid}"
+                    id="email" type="email" formControlName="email" class="inputStyle" name="email" #emailField
+                    placeholder="Your email">
+                <div *ngIf="!email?.valid && email?.touched">
+                    <img class="imagePosition" src="assets/img/icons/formError.png"
+                        [hidden]="!email?.errors?.['valid'] && email?.errors?.['touched']">
+                </div>
+                <div *ngIf="email?.valid && email?.touched">
+                    <img class="imagePosition" src="assets/img/icons/formSuccess.png"
+                        [hidden]="email?.errors?.['valid'] && email?.errors?.['touched']">
+                </div>
+                <div *ngIf="!email?.valid && email?.touched">
+                    <div [ngStyle]="{'color': 'red'}" [hidden]="!email?.errors?.['required']">
+                        Your email is required
+                    </div>
+                    <div [ngStyle]="{'color': 'red'}" [hidden]="!email?.errors?.['email']">
+                        Your email adress is invalid
+                    </div>
+                </div>
+            </div>
+
+            <!-- Input for message -->
+            <div [ngStyle]="{'position': 'relative'}">
+                <textarea [ngClass]="{'redBorder' : !message?.valid && message?.touched, 'greenBorder': message?.valid}"
+                    id="message" type="text" formControlName="message" class="inputStyle" name="message" #messageField
+                    placeholder="Your message"></textarea>
+                <div *ngIf="!message?.valid && message?.touched">
+                    <img class="imagePosition" src="assets/img/icons/formError.png"
+                        [hidden]="!message?.errors?.['valid'] && message?.errors?.['touched']">
+                </div>
+                <div *ngIf="message?.valid && message?.touched">
+                    <img class="imagePosition" src="assets/img/icons/formSuccess.png"
+                        [hidden]="message?.errors?.['valid'] && message?.errors?.['touched']">
+                </div>
+                <div *ngIf="!message?.valid && message?.touched">
+                    <div [ngStyle]="{'color': 'red'}" [hidden]="!message?.errors?.['required']">
+                        Your message is empty
+                    </div>
+                </div>
+            </div>
+
             <span [innerHTML]="successfullSend"></span>
-            <button class="mainButton" #sendButton>Send message :)</button>
+            <button [ngClass]="{'disabled-btn': !contactForm.valid}" [disabled]="!contactForm.valid" class="mainButton" #sendButton>Send message :)</button>
         </form>
     </div>
     <img class="shadowFooter" src="assets/img/shadow/purpleShadowFooter.png">

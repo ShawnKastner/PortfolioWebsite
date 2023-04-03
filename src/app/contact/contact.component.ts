@@ -1,4 +1,7 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
+import { EmailValidator, NgForm, Validators, FormGroup, FormControl } from '@angular/forms';
+import { FormBuilder } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
@@ -14,6 +17,29 @@ export class ContactComponent {
   @ViewChild('nameField') nameField!: ElementRef;
   @ViewChild('messageField') messageField!: ElementRef;
   @ViewChild('sendButton') sendButton!: ElementRef;
+  contactForm;
+
+  constructor(private formBuilder: FormBuilder) {
+
+
+    this.contactForm = this.formBuilder.group( {
+      name: ['', [Validators.required]],
+      email:['', [Validators.required, Validators.email]],
+      message:['', [Validators.required, Validators.minLength(3)]],
+    })
+  }
+  
+  get name() {
+    return this.contactForm.get('name');
+  }
+  
+  get email() {
+    return this.contactForm.get('email');
+  }
+  
+  get message() {
+    return this.contactForm.get('message');
+  }
 
   async sendMail() {
     let nameField = this.nameField.nativeElement;
@@ -37,6 +63,7 @@ export class ContactComponent {
 
     setTimeout(() => {
       this.activateInputFields(nameField, emailField, messageField, sendButton);
+      this.successfullSend = '';
     },5000)
   }
 
