@@ -141,7 +141,6 @@
         .shadowImg {
             position: absolute;
             width: 450px;
-            right: 0;
             top: 120px;
         }
 
@@ -158,6 +157,12 @@
 
         .purpleLine {
             width: 64px;
+        }
+    }
+
+    @media (max-width:600px) {
+        .shadowImg {
+            right: 0;
         }
     }
 
