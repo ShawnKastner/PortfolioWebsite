@@ -51,6 +51,16 @@
     animation: slideOut ease-out 0.25s;
 }
 
+.setColorGreen {
+    color: #70E61C !important;
+}
+
+.setUnderline {
+    border-bottom: 3px solid #9747FF;
+    width: 55px;
+    border-radius: 10px;
+}
+
 @keyframes slideIn {
     from {
         margin-left: 100%;

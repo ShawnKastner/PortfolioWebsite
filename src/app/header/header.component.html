@@ -1,9 +1,20 @@
 <nav class="headerContainer">
     <a href="#startSection"><img src="assets/img/logo2.png"></a>
     <div class="headerLinks hideMobile">
-        <a href="#aboutMe">About me</a>
-        <a href="#skills">Skills</a>
-        <a href="#portfolio">Portfolio</a>
+        <div>
+            <a [ngClass]="{'setColorGreen': clickAboutMe}" (click)="selectedLink('headAbout')" href="#aboutMe">About
+                me</a>
+            <div [ngClass]="{'setUnderline': clickAboutMe}"></div>
+        </div>
+        <div>
+            <a [ngClass]="{'setColorGreen': clickSkills}" (click)="selectedLink('headSkills')" href="#skills">Skills</a>
+            <div [ngClass]="{'setUnderline': clickSkills}"></div>
+        </div>
+        <div>
+            <a [ngClass]="{'setColorGreen': clickPortfolio}" (click)="selectedLink('headPortfolio')"
+                href="#portfolio">Portfolio</a>
+            <div [ngClass]="{'setUnderline': clickPortfolio}"></div>
+        </div>
     </div>
 
     <div class="hideDesktop">

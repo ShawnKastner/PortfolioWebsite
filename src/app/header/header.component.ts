@@ -10,6 +10,9 @@ export class HeaderComponent {
   headerLinks = true;
   slideIn = false;
   slideOut = false;
+  clickAboutMe = false;
+  clickSkills = false;
+  clickPortfolio = false;
 
   openMobileMenu() {
     this.dNone = false;
@@ -27,4 +30,31 @@ export class HeaderComponent {
 
   }
 
+  selectedLink(id: string) {
+    if (id == 'headAbout') {
+      this.setAboutMeTrue();
+    } else if (id == 'headSkills') {
+      this.setSkillsTrue();
+    } else if (id == 'headPortfolio') {
+      this.setPortfolioTrue();
+    }
+  }
+
+  setAboutMeTrue() {
+    this.clickAboutMe = true
+    this.clickSkills = false;
+    this.clickPortfolio = false;
+  }
+
+  setSkillsTrue() {
+    this.clickSkills = true;
+    this.clickAboutMe = false;
+    this.clickPortfolio = false;
+  }
+
+  setPortfolioTrue() {
+    this.clickPortfolio = true;
+    this.clickAboutMe = false;
+    this.clickSkills = false;
+  }
 }
