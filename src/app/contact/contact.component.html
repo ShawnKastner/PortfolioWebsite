@@ -14,7 +14,7 @@
 
         <form [formGroup]="contactForm" (ngSubmit)="sendMail()" novalidate #myForm>
             <!-- Input for full name -->
-            <div [ngStyle]="{'position': 'relative'}">
+            <div class="flexWidth-100" [ngStyle]="{'position': 'relative'}">
                 <input class="inputStyle" id="name"
                     [ngClass]="{'redBorder' : !name?.valid && name?.touched, 'greenBorder': name?.valid}" type="text"
                     id="name" name="name" formControlName="name" placeholder="Your name" #nameField>
@@ -34,7 +34,7 @@
             </div>
 
             <!-- Input for email -->
-            <div [ngStyle]="{'position': 'relative'}">
+            <div class="flexWidth-100" [ngStyle]="{'position': 'relative'}">
                 <input [ngClass]="{'redBorder' : !email?.valid && email?.touched, 'greenBorder': email?.valid}"
                     id="email" type="email" formControlName="email" class="inputStyle" name="email" #emailField
                     placeholder="Your email">
@@ -57,7 +57,7 @@
             </div>
 
             <!-- Input for message -->
-            <div [ngStyle]="{'position': 'relative'}">
+            <div class="flexWidth-100" [ngStyle]="{'position': 'relative'}">
                 <textarea [ngClass]="{'redBorder' : !message?.valid && message?.touched, 'greenBorder': message?.valid}"
                     id="message" type="text" formControlName="message" class="inputStyle" name="message" #messageField
                     placeholder="Your message"></textarea>

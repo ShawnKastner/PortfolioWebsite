@@ -52,6 +52,7 @@
 
         textarea {
             height: 202px;
+            resize: none;
         }
     }
 
@@ -119,9 +120,6 @@
         }
 
         form {
-            padding-left: 25px;
-            padding-right: 25px;
-
             .inputStyle {
                 width: 100%;
             }
@@ -133,6 +131,15 @@
             bottom: 38px;
         }
 
+    }
+
+    .flexWidth-100 {
+        display: flex;
+        width: 100%;
+    }
+
+    .imagePosition {
+        right: -38px;
     }
 }
 
