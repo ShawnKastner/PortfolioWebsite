@@ -1,19 +1,22 @@
-import { AfterViewInit, Component } from '@angular/core';
+import {  Component } from '@angular/core';
+import { NavigationEnd, Router, Routes } from '@angular/router';
+import { ViewportScroller } from '@angular/common'; //import
+import { filter } from 'rxjs';
 
 @Component({
   selector: 'app-imprint',
   templateUrl: './imprint.component.html',
   styleUrls: ['./imprint.component.scss']
 })
-export class ImprintComponent implements AfterViewInit{
+export class ImprintComponent {
 
-  ngAfterViewInit() {
-    // Hack: Scrolls to top of Page after page view initialized
-    let top = document.getElementById('top');
-    if (top !== null) {
-      top.scrollIntoView();
-      top = null;
-    }
+  private applicationInitialRoutes!: Routes;
+  constructor(
+    private router: Router,
+    private viewPortScroller: ViewportScroller//inject
+  ) {
+    this.router.events.pipe(
+      filter(event => event instanceof NavigationEnd))
+      .subscribe(() => this.viewPortScroller.scrollToPosition([0, 0]));
   }
-
 }
