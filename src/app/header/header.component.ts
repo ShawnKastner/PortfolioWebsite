@@ -13,10 +13,12 @@ export class HeaderComponent {
   clickAboutMe = false;
   clickSkills = false;
   clickPortfolio = false;
+  positionFix = false;
 
   openMobileMenu() {
     this.dNone = false;
     this.slideIn = true;
+    this.positionFix = true;
     setTimeout(() => this.slideIn = false, 500);
   }
 
@@ -25,8 +27,9 @@ export class HeaderComponent {
 
     setTimeout(() => {
       this.slideOut = false;
+      this.positionFix = false;
       this.dNone = true;
-    }, 200);
+    }, 100);
 
   }
 

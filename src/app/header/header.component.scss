@@ -28,15 +28,18 @@
     }
 }
 
+.positionFix {
+    position: fixed;
+}
+
 .burgerMenu {
     cursor: pointer;
 }
 
 .closeBtn {
     cursor: pointer;
-    position: absolute;
-    top: 37px;
-    right: 40px;
+    position: relative;
+    z-index: 1000;
 }
 
 .dNone {
@@ -110,8 +113,8 @@
     }
 }
 
-@media(max-width: 380px) {
-    .closeBtn {
-        right: 13px;
-    }
-}
+// @media(max-width: 380px) {
+//     .closeBtn {
+//         right: 13px;
+//     }
+// }

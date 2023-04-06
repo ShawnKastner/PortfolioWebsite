@@ -18,9 +18,11 @@
     </div>
 
     <div class="hideDesktop">
-        <img (click)="openMobileMenu()" class="burgerMenu" src="assets/img/icons/burgerMenu.png">
+        <img [ngClass]="{'positionFix': positionFix}" (click)="openMobileMenu()" class="burgerMenu" src="assets/img/icons/burgerMenu.png">
+        <img [ngClass]="{'dNone': dNone, 'slideIn': slideIn, 'slideOut': slideOut}"
+            (click)="closeMobileMenu()" class="closeBtn burgerMenu" src="assets/img/icons/close.png">
         <div [ngClass]="{'dNone': dNone, 'headerLinks': headerLinks, 'slideIn': slideIn, 'slideOut': slideOut}">
-            <img (click)="closeMobileMenu()" class="closeBtn" src="assets/img/icons/close.png">
+
             <a (click)="closeMobileMenu()" href="#aboutMe">About me</a>
             <a (click)="closeMobileMenu()" href="#skills">Skills</a>
             <a (click)="closeMobileMenu()" href="#portfolio">Portfolio</a>
