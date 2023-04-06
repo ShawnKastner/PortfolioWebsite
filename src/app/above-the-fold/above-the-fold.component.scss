@@ -131,6 +131,13 @@
     .aboveTheFoldSection {
         padding: unset;
 
+        .myImgBig {
+            height: 447.82px;
+            top: 360px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
         .headlineContainer {
             right: unset;
             height: unset;
@@ -150,8 +157,10 @@
 
         .shadowImg {
             position: absolute;
-            width: 450px;
-            top: 120px;
+            width: 100%;
+            top: 390px;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
 
         .socialMediaContainer {
@@ -178,6 +187,10 @@
 
     @media(max-width: 400px) {
         .aboveTheFoldSection {
+        .myImgBig {
+            top: 365px;
+        }
+
             .socialMediaContainer {
                 bottom: -230px;
             }
