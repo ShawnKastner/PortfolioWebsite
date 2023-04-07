@@ -26,11 +26,12 @@
         }
 
         .transformSpan {
+            font-size: 68px;
             text-transform: unset;
-            color: #ffff;
+            color: white;
             position: absolute;
-            left: -85px;
-            display: flex;
+            bottom: 92px;
+            left: -100px;
             transform: rotate(-90deg);
         }
 
@@ -117,11 +118,17 @@
     .aboveTheFoldSection {
         .headlineContainer {
             .headlineName {
-                font-size: 45px;
+                font-size: 46px;
+            }
+
+            .transformSpan {
+                font-size: 43px;
+                bottom: 104px;
+                left: -63px;
             }
 
             span {
-                font-size: 33px;
+                font-size: 35px;
             }
         }
 
@@ -146,6 +153,12 @@
             top: unset;
             align-items: center;
             bottom: 100px;
+
+            .transformSpan {
+                font-size: 43px;
+                bottom: 114px;
+                left: -65px;
+            }
         }
 
         .bowImg {
@@ -189,9 +202,9 @@
 
     @media(max-width: 400px) {
         .aboveTheFoldSection {
-        .myImgBig {
-            top: 365px;
-        }
+            .myImgBig {
+                top: 365px;
+            }
 
             .socialMediaContainer {
                 bottom: -230px;
@@ -200,12 +213,18 @@
             .headlineContainer {
                 bottom: -135px;
 
+                .transformSpan {
+                    font-size: 30px;
+                    bottom: 108px;
+                    left: -45px;
+                }
+
                 .headlineName {
-                    font-size: 40px;
+                    font-size: 33px;
                 }
 
                 span {
-                    font-size: 30px;
+                    font-size: 25px;
                 }
             }
         }
