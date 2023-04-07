@@ -27,9 +27,11 @@
 
         .transformSpan {
             text-transform: unset;
-
+            color: #ffff;
+            position: absolute;
+            left: -85px;
+            display: flex;
             transform: rotate(-90deg);
-
         }
 
         .headlineName {
@@ -40,7 +42,7 @@
 
         span {
             color: #9747FF;
-            font-size: 54px;
+            font-size: 56px;
             text-transform: uppercase;
         }
     }

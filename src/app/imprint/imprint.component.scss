@@ -1,12 +1,12 @@
 .imprintContainer {
     padding: 100px;
     margin-top: 10px;
+    max-width: 100vw;
 }
 
 @media (max-width: 635px) {
     .imprintContainer {
         margin-top: 70px;
         padding: 25px;
-        width: 100%;
     }
 }
