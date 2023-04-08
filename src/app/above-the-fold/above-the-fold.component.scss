@@ -219,4 +219,18 @@
         }
     }
 
+    @media(max-width: 360px) {
+        .aboveTheFoldSection {
+            .headlineContainer {
+                .headlineName {
+                    font-size: 31px;
+                }
+
+                span {
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+
 }
