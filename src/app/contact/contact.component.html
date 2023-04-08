@@ -27,7 +27,7 @@
                         [hidden]="name?.errors?.['valid'] && name?.errors?.['touched']">
                 </div>
                 <div *ngIf="!name?.valid && name?.touched">
-                    <div [ngStyle]="{'color': 'red'}" [hidden]="!name?.errors?.['required']">
+                    <div [ngStyle]="{'color': 'red', 'padding-top': '10px'}" [hidden]="!name?.errors?.['required']">
                         Your name is required
                     </div>
                 </div>
@@ -47,10 +47,10 @@
                         [hidden]="email?.errors?.['valid'] && email?.errors?.['touched']">
                 </div>
                 <div *ngIf="!email?.valid && email?.touched">
-                    <div [ngStyle]="{'color': 'red'}" [hidden]="!email?.errors?.['required']">
+                    <div [ngStyle]="{'color': 'red', 'padding-top': '10px'}" [hidden]="!email?.errors?.['required']">
                         Your email is required
                     </div>
-                    <div [ngStyle]="{'color': 'red'}" [hidden]="!email?.errors?.['email']">
+                    <div [ngStyle]="{'color': 'red', 'padding-top': '10px'}" [hidden]="!email?.errors?.['email']">
                         Your email adress is invalid
                     </div>
                 </div>
@@ -70,7 +70,7 @@
                         [hidden]="message?.errors?.['valid'] && message?.errors?.['touched']">
                 </div>
                 <div *ngIf="!message?.valid && message?.touched">
-                    <div [ngStyle]="{'color': 'red'}" [hidden]="!message?.errors?.['required']">
+                    <div [ngStyle]="{'color': 'red', 'padding-top': '10px'}" [hidden]="!message?.errors?.['required']">
                         Your message is empty
                     </div>
                 </div>

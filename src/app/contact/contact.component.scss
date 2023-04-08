@@ -121,7 +121,7 @@
 
         form {
             .inputStyle {
-                width: 100%;
+                width: calc(100vw - 110px);
             }
         }
 
@@ -135,11 +135,8 @@
 
     .flexWidth-100 {
         display: flex;
+        flex-direction: column;
         width: 100%;
-    }
-
-    .imagePosition {
-        right: -38px;
     }
 }
 
