@@ -26,13 +26,12 @@
         }
 
         .transformSpan {
-            font-size: 68px;
+            color: #ffff;
             text-transform: unset;
-            color: white;
-            position: absolute;
-            bottom: 92px;
-            left: -100px;
             transform: rotate(-90deg);
+            display: flex;
+            align-items: end;
+            font-size: 70px;
         }
 
         .headlineName {
@@ -123,8 +122,6 @@
 
             .transformSpan {
                 font-size: 43px;
-                bottom: 104px;
-                left: -63px;
             }
 
             span {
@@ -153,12 +150,6 @@
             top: unset;
             align-items: center;
             bottom: 100px;
-
-            .transformSpan {
-                font-size: 43px;
-                bottom: 114px;
-                left: -65px;
-            }
         }
 
         .bowImg {
@@ -200,7 +191,7 @@
         }
     }
 
-    @media(max-width: 400px) {
+    @media(max-width: 500px) {
         .aboveTheFoldSection {
             .myImgBig {
                 top: 365px;
@@ -211,20 +202,18 @@
             }
 
             .headlineContainer {
-                bottom: -135px;
+                top: 690px;
 
                 .transformSpan {
-                    font-size: 30px;
-                    bottom: 108px;
-                    left: -45px;
+                    font-size: 29px;
                 }
 
                 .headlineName {
-                    font-size: 33px;
+                    font-size: 35px;
                 }
 
                 span {
-                    font-size: 25px;
+                    font-size: 27px;
                 }
             }
         }
