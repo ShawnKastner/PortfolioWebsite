@@ -35,14 +35,16 @@
         }
 
         .headlineName {
-            font-size: 73px;
-            font-weight: 700;
+            line-height: 120%;
+            font-size: 80px;
+            margin: 0;
             color: #ffff;
         }
 
         span {
+            line-height: 120%;
             color: #9747FF;
-            font-size: 56px;
+            font-size: 58px;
             text-transform: uppercase;
         }
     }
@@ -117,15 +119,15 @@
     .aboveTheFoldSection {
         .headlineContainer {
             .headlineName {
-                font-size: 46px;
+                font-size: 50px;
             }
 
             .transformSpan {
-                font-size: 43px;
+                font-size: 46px;
             }
 
             span {
-                font-size: 35px;
+                font-size: 36px;
             }
         }
 
@@ -191,7 +193,7 @@
         }
     }
 
-    @media(max-width: 500px) {
+    @media(max-width: 510px) {
         .aboveTheFoldSection {
             .myImgBig {
                 top: 365px;
@@ -205,29 +207,29 @@
                 top: 690px;
 
                 .transformSpan {
-                    font-size: 29px;
+                    font-size: 32px;
                 }
 
                 .headlineName {
-                    font-size: 35px;
+                    font-size: 33px;
                 }
 
                 span {
-                    font-size: 27px;
+                    font-size: 24px;
                 }
             }
         }
     }
 
-    @media(max-width: 360px) {
+    @media(max-width: 380px) {
         .aboveTheFoldSection {
             .headlineContainer {
                 .headlineName {
-                    font-size: 31px;
+                    font-size: 30px;
                 }
 
                 span {
-                    font-size: 24px;
+                    font-size: 22px;
                 }
             }
         }
