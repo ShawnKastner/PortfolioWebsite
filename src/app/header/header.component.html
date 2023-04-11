@@ -1,5 +1,5 @@
 <nav class="headerContainer">
-    <a href="#startSection"><img src="assets/img/logo2.png"></a>
+    <a (click)="selectedLink('headLogo')" href="#startSection"><img src="assets/img/logo2.png"></a>
     <div class="headerLinks hideMobile">
         <div>
             <a [ngClass]="{'setColorGreen': clickAboutMe}" (click)="selectedLink('headAbout')" href="#aboutMe">About

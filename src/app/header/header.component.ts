@@ -40,6 +40,8 @@ export class HeaderComponent {
       this.setSkillsTrue();
     } else if (id == 'headPortfolio') {
       this.setPortfolioTrue();
+    } else if (id== 'headLogo') {
+      this.setAllFalse();
     }
   }
 
@@ -57,6 +59,12 @@ export class HeaderComponent {
 
   setPortfolioTrue() {
     this.clickPortfolio = true;
+    this.clickAboutMe = false;
+    this.clickSkills = false;
+  }
+
+  setAllFalse() {
+    this.clickPortfolio = false;
     this.clickAboutMe = false;
     this.clickSkills = false;
   }
