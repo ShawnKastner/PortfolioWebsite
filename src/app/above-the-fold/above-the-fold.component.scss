@@ -19,6 +19,12 @@
         top: 297px;
         z-index: 1;
 
+        .alignCenterJustifyEnd {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+        }
+
         .btnContainer {
             width: 100%;
             display: flex;
@@ -221,18 +227,41 @@
         }
     }
 
-    @media(max-width: 380px) {
+    @media (max-width: 400px) {
         .aboveTheFoldSection {
+            .myImgBig {
+                top: 295px;
+            }
+
             .headlineContainer {
+                top: 590px;
+                gap: 15px;
+
                 .headlineName {
-                    font-size: 30px;
+                    font-size: 33px;
                 }
 
                 span {
-                    font-size: 22px;
+                    font-size: 24px;
                 }
+            }
+
+            .socialMediaContainer {
+                bottom: -130px;
+            }
+
+            .bowImg {
+                height: 445.43px;
+                top: 340.09px;
+            }
+
+            .width-453 {
+                width: 353px;
+            }
+
+            .mainButton {
+                margin: unset;
             }
         }
     }
-
 }

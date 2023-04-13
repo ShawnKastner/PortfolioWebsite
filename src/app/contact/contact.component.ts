@@ -81,4 +81,12 @@ export class ContactComponent {
     messageField.disabled = false;
     sendButton.disabled = false;
   }
+
+  scrollTop() {
+      window.scroll({ 
+              top: 0, 
+              left: 0, 
+              behavior: 'smooth' 
+       });
+  }
 }

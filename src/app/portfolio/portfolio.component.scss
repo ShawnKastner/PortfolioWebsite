@@ -3,6 +3,7 @@
 
     h1 {
         font-size: 90px;
+        margin: 0;
     }
 
     .headlineContainer {
@@ -10,6 +11,7 @@
         justify-content: flex-end;
         align-items: center;
         gap: 42px;
+        padding-top: 20px;
 
         .shortPurpleLine {
             width: 109px;
@@ -123,6 +125,7 @@
 
         .headlineContainer {
             gap: 9px;
+            padding-top: 20px;
 
             h1 {
                 font-size: 45px;

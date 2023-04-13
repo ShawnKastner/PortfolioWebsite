@@ -12,6 +12,7 @@
 
     .skillImagesContainer {
         width: 740px;
+        margin-top: 40px;
         display: flex;
         gap: 90px;
         flex-wrap: wrap;
@@ -29,6 +30,7 @@
         top: 340px;
         filter: blur(25.5px);
         transform: rotate(-151.74deg);
+        z-index: -1;
     }
 
     @keyframes imagesJump {
@@ -115,6 +117,10 @@
             flex-direction: column;
             align-items: flex-end;
             margin-bottom: 60px;
+        }
+
+        .skillImagesContainer {
+            margin-top: unset;
         }
 
         .skillsExperienceText {
