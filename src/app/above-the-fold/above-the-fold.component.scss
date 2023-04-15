@@ -107,6 +107,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
     position: absolute;
     bottom: 60px;
     right: 40px;
@@ -117,7 +118,6 @@
     img {
         transform: rotate(-90deg);
     }
-
 }
 
 @media (max-width: 1340px) {
@@ -230,11 +230,12 @@
     @media (max-width: 400px) {
         .aboveTheFoldSection {
             .myImgBig {
-                top: 295px;
+                top: 280px;
+                height: 400px;
             }
 
             .headlineContainer {
-                top: 590px;
+                top: 570px;
                 gap: 15px;
 
                 .headlineName {
@@ -252,7 +253,7 @@
 
             .bowImg {
                 height: 445.43px;
-                top: 340.09px;
+                top: 300px;
             }
 
             .width-453 {

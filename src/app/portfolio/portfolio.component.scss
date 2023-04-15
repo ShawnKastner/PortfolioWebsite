@@ -1,5 +1,6 @@
 .portfolioContainer {
     margin-top: 120px;
+    position: relative;
 
     h1 {
         font-size: 90px;
@@ -108,6 +109,17 @@
 
 .textEnd {
     text-align: end;
+}
+
+.greenShadow {
+    position: absolute;
+    width: 428.59px;
+    height: 951.44px;
+    right: -190px;
+    bottom: -480px;
+    z-index: -1;
+    filter: blur(46.5px);
+    transform: matrix(-0.7, -0.71, -0.71, 0.7, 0, 0);
 }
 
 @media (max-width: 900px) {
