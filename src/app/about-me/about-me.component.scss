@@ -71,11 +71,13 @@
 
     .purpleShadow {
         position: absolute;
-        right: -500px;
+        // right: -500px;
+        right: 0;
+        width: 350px;
         top: 780px;
         height: 900px;
         filter: blur(46.5px);
-        transform: rotate(46.66deg);
+        // transform: rotate(46.66deg);
     }
 }
 
@@ -83,6 +85,10 @@
     .aboutMeContainer {
         .profileImageContainer {
             right: 70px;
+        }
+
+        .purpleShadow {
+            height: 700px;
         }
     }
 }
